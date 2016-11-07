@@ -12,13 +12,14 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    @IBOutlet var skInterface: WKInterfaceSKScene!
+    @IBOutlet var scene: WKInterfaceSKScene!
     
     override func awake(withContext context: Any?) {
         
         super.awake(withContext: context)
-        if let scene = GameScene(fileNamed: "GameScene") {
-            
+        if let skScene = GameScene(fileNamed: "GameScene") {
+            skScene.scaleMode = .aspectFill
+            scene.presentScene(skScene)
         }
     }
     
@@ -29,5 +30,4 @@ class InterfaceController: WKInterfaceController {
     override func didDeactivate() {
         super.didDeactivate()
     }
-
 }

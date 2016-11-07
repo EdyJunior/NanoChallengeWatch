@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE82BD5B1DD13C9600C338F6 /* pkms.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CE82BD5A1DD13C9600C338F6 /* pkms.atlas */; };
+		CE82BD5C1DD13C9600C338F6 /* pkms.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CE82BD5A1DD13C9600C338F6 /* pkms.atlas */; };
+		CE82BD5D1DD13C9600C338F6 /* pkms.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CE82BD5A1DD13C9600C338F6 /* pkms.atlas */; };
+		CE82BD5E1DD13C9600C338F6 /* pkms.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CE82BD5A1DD13C9600C338F6 /* pkms.atlas */; };
+		CE82BD5F1DD13C9600C338F6 /* pkms.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CE82BD5A1DD13C9600C338F6 /* pkms.atlas */; };
 		CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28991DD11B6000FD2457 /* AppDelegate.swift */; };
 		CEAB289C1DD11B6000FD2457 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289B1DD11B6000FD2457 /* GameScene.sks */; };
 		CEAB289E1DD11B6000FD2457 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289D1DD11B6000FD2457 /* Actions.sks */; };
@@ -87,6 +92,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE82BD5A1DD13C9600C338F6 /* pkms.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = pkms.atlas; sourceTree = "<group>"; };
 		CEAB28961DD11B6000FD2457 /* NanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAB28991DD11B6000FD2457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAB289B1DD11B6000FD2457 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -222,6 +228,7 @@
 		CEAB28DF1DD11B7B00FD2457 /* NanoChallengeWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CE82BD5A1DD13C9600C338F6 /* pkms.atlas */,
 				CEAB28E21DD11B7B00FD2457 /* InterfaceController.swift */,
 				CEAB28E41DD11B7B00FD2457 /* GameScene.sks */,
 				CEAB28E61DD11B7B00FD2457 /* GameScene.swift */,
@@ -405,6 +412,7 @@
 				CEAB289C1DD11B6000FD2457 /* GameScene.sks in Resources */,
 				CEAB28A71DD11B6000FD2457 /* Assets.xcassets in Resources */,
 				CEAB28AA1DD11B6000FD2457 /* LaunchScreen.storyboard in Resources */,
+				CE82BD5B1DD13C9600C338F6 /* pkms.atlas in Resources */,
 				CEAB289E1DD11B6000FD2457 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82BD5C1DD13C9600C338F6 /* pkms.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82BD5D1DD13C9600C338F6 /* pkms.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB28D51DD11B7B00FD2457 /* Assets.xcassets in Resources */,
+				CE82BD5E1DD13C9600C338F6 /* pkms.atlas in Resources */,
 				CEAB28D31DD11B7B00FD2457 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB28EF1DD11B7B00FD2457 /* Assets.xcassets in Resources */,
+				CE82BD5F1DD13C9600C338F6 /* pkms.atlas in Resources */,
 				CEAB28E51DD11B7B00FD2457 /* GameScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -801,6 +813,7 @@
 				CEAB28C61DD11B6000FD2457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEAB28C71DD11B6000FD2457 /* Build configuration list for PBXNativeTarget "NanoChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -809,6 +822,7 @@
 				CEAB28C91DD11B6000FD2457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEAB28CA1DD11B6000FD2457 /* Build configuration list for PBXNativeTarget "NanoChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -817,6 +831,7 @@
 				CEAB28CC1DD11B6000FD2457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEAB28F41DD11B7B00FD2457 /* Build configuration list for PBXNativeTarget "NanoChallengeWatch Extension" */ = {
 			isa = XCConfigurationList;
@@ -825,6 +840,7 @@
 				CEAB28F61DD11B7B00FD2457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEAB28F81DD11B7B00FD2457 /* Build configuration list for PBXNativeTarget "NanoChallengeWatch" */ = {
 			isa = XCConfigurationList;
@@ -833,6 +849,7 @@
 				CEAB28FA1DD11B7B00FD2457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

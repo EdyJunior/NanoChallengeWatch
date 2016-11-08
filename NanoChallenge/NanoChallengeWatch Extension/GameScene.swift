@@ -13,27 +13,43 @@ class GameScene: SKScene {
     
     override func sceneDidLoad() {
         
+        createLabels()
+        createTama()
+    }
+    
+    func createLabels() {
+        
+        let fontName = "Geeza Pro"
+        let fontSize = scene!.size.height * 0.08
+        
+        let nivelPos = CGPoint(x: -scene!.size.width * 0.35, y: scene!.size.height * 0.35)
         let nivelLabel = SKLabelNode(text: "lv: 12")
-        nivelLabel.fontSize = 30
-        nivelLabel.fontName = "Arial"
-        nivelLabel.fontColor = UIColor.white
-        nivelLabel.position = CGPoint(x: -scene!.size.width * 0.35, y: scene!.size.height * 0.35)
-        scene?.addChild(nivelLabel)
+        nivelLabel.setLabel(size: fontSize, font: fontName, color: .white, position: nivelPos)
+        scene!.addChild(nivelLabel)
         
+        let xpPos = CGPoint(x: 0, y: scene!.size.height * 0.35)
         let xpLabel = SKLabelNode(text: "xp: 22")
-        xpLabel.fontSize = 30
-        xpLabel.fontName = "Arial"
-        xpLabel.fontColor = UIColor.white
-        xpLabel.position = CGPoint(x: 0, y: scene!.size.height * 0.35)
-        scene?.addChild(xpLabel)
+        xpLabel.setLabel(size: fontSize, font: fontName, color: .white, position: xpPos)
+        scene!.addChild(xpLabel)
         
+        let stmPos = CGPoint(x: +scene!.size.width * 0.35, y: scene!.size.height * 0.35)
         let stmLabel = SKLabelNode(text: "st: 12")
-        stmLabel.fontSize = 30
-        stmLabel.fontName = "Arial"
-        stmLabel.fontColor = UIColor.white
-        stmLabel.position = CGPoint(x: +scene!.size.width * 0.35, y: scene!.size.height * 0.35)
-        scene?.addChild(stmLabel)
+        stmLabel.setLabel(size: fontSize, font: fontName, color: .white, position: stmPos)
+        scene!.addChild(stmLabel)
+    }
+    
+    func createTama() {
         
-        let bicho = SKSpriteNode(imageNamed: ")
+        let bicho = SKSpriteNode(imageNamed: "Coelho_1-0")
+        bicho.size = CGSize(width: scene!.size.width * 0.5, height: scene!.size.height * 0.4)
+        let atlas = SKTextureAtlas(named: "Coelho_1")
+        var frames = [SKTexture]()
+        
+        for textureName in atlas.textureNames{
+            frames.append(atlas.textureNamed(textureName))
+        }
+        
+        bicho.run(SKAction.repeatForever(SKAction.animate(with: frames, timePerFrame: 0.4)))
+        scene!.addChild(bicho)
     }
 }

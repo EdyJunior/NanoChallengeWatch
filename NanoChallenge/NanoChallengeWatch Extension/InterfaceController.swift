@@ -17,10 +17,9 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         
         super.awake(withContext: context)
-        if let skScene = GameScene(fileNamed: "GameScene") {
-            skScene.scaleMode = .aspectFill
-            scene.presentScene(skScene)
-        }
+        let skScene = GameScene(fileNamed: "GameScene")
+        skScene!.scaleMode = .aspectFill
+        scene.presentScene(skScene)
     }
     
     override func willActivate() {

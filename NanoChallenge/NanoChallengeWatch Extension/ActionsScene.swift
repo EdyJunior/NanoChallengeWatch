@@ -11,6 +11,8 @@ import WatchKit
 
 class ActionsScene: SKScene {
     
+    @IBOutlet weak var eatButton: WKInterfaceButton!
+    
     override func sceneDidLoad() {
         createButtons()
     }
@@ -20,6 +22,8 @@ class ActionsScene: SKScene {
         let sSize = scene!.size
         
         let buttonsSize = CGSize(width: sSize.width * 0.25, height: sSize.width * 0.25)
+        
+        //eatButton.setBackgroundImageNamed("icon-4")
         
         let eatPos = CGPoint(x: sSize.width * 0.15, y: sSize.height * 0.7)
         let eatBtn = Button(defaultButtonImage: "icon-4", activeButtonImage: "icon-4")

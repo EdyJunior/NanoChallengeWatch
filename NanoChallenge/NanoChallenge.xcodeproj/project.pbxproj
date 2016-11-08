@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		971060771DD1F00B00C20C4F /* Tama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971060761DD1F00B00C20C4F /* Tama.swift */; };
 		971060791DD1F23B00C20C4F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971060781DD1F23B00C20C4F /* LoginScreen.swift */; };
+		9710607B1DD1FE6600C20C4F /* FeedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710607A1DD1FE6600C20C4F /* FeedScreen.swift */; };
+		9710607D1DD2012E00C20C4F /* HealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710607C1DD2012E00C20C4F /* HealthBar.swift */; };
 		CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28991DD11B6000FD2457 /* AppDelegate.swift */; };
 		CEAB289C1DD11B6000FD2457 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289B1DD11B6000FD2457 /* GameScene.sks */; };
 		CEAB289E1DD11B6000FD2457 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289D1DD11B6000FD2457 /* Actions.sks */; };
@@ -100,6 +102,8 @@
 /* Begin PBXFileReference section */
 		971060761DD1F00B00C20C4F /* Tama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tama.swift; sourceTree = "<group>"; };
 		971060781DD1F23B00C20C4F /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		9710607A1DD1FE6600C20C4F /* FeedScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedScreen.swift; sourceTree = "<group>"; };
+		9710607C1DD2012E00C20C4F /* HealthBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
 		CEAB28961DD11B6000FD2457 /* NanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAB28991DD11B6000FD2457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAB289B1DD11B6000FD2457 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				971060761DD1F00B00C20C4F /* Tama.swift */,
+				9710607C1DD2012E00C20C4F /* HealthBar.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				CEAB28A81DD11B6000FD2457 /* LaunchScreen.storyboard */,
 				CEAB28AB1DD11B6000FD2457 /* Info.plist */,
 				971060781DD1F23B00C20C4F /* LoginScreen.swift */,
+				9710607A1DD1FE6600C20C4F /* FeedScreen.swift */,
 			);
 			path = NanoChallenge;
 			sourceTree = "<group>";
@@ -483,7 +489,9 @@
 				CEAB28A01DD11B6000FD2457 /* GameScene.swift in Sources */,
 				CEAB28A21DD11B6000FD2457 /* GameViewController.swift in Sources */,
 				CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */,
+				9710607B1DD1FE6600C20C4F /* FeedScreen.swift in Sources */,
 				971060771DD1F00B00C20C4F /* Tama.swift in Sources */,
+				9710607D1DD2012E00C20C4F /* HealthBar.swift in Sources */,
 				CEF364121DD17F5900312FA8 /* Util.swift in Sources */,
 				971060791DD1F23B00C20C4F /* LoginScreen.swift in Sources */,
 			);

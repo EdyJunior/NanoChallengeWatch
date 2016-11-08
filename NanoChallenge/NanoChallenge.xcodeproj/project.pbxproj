@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B54249611DD20B2100A5DC83 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CED231DD1EF9C00182D26 /* Button.swift */; };
+		B54249621DD20B2300A5DC83 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CED231DD1EF9C00182D26 /* Button.swift */; };
+		B54249691DD20D9B00A5DC83 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CED231DD1EF9C00182D26 /* Button.swift */; };
+		B542496E1DD21A6600A5DC83 /* ActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542496A1DD21A6600A5DC83 /* ActionController.swift */; };
+		B542497A1DD2588E00A5DC83 /* TamaScreenScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54249791DD2588E00A5DC83 /* TamaScreenScene.swift */; };
+		B542497B1DD2588E00A5DC83 /* TamaScreenScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54249791DD2588E00A5DC83 /* TamaScreenScene.swift */; };
+		B542497C1DD2588E00A5DC83 /* TamaScreenScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54249791DD2588E00A5DC83 /* TamaScreenScene.swift */; };
+		B542497F1DD2643500A5DC83 /* PhoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542497E1DD2643500A5DC83 /* PhoneButton.swift */; };
+		B54249801DD2643500A5DC83 /* PhoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542497E1DD2643500A5DC83 /* PhoneButton.swift */; };
+		B54249811DD2643500A5DC83 /* PhoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542497E1DD2643500A5DC83 /* PhoneButton.swift */; };
 		CE7CED221DD1EC0000182D26 /* ActionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CED211DD1EC0000182D26 /* ActionsScene.swift */; };
-		CE7CED241DD1EF9C00182D26 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CED231DD1EF9C00182D26 /* Button.swift */; };
-		CE7CED251DD1EF9C00182D26 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CED231DD1EF9C00182D26 /* Button.swift */; };
 		CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28991DD11B6000FD2457 /* AppDelegate.swift */; };
 		CEAB289C1DD11B6000FD2457 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289B1DD11B6000FD2457 /* GameScene.sks */; };
 		CEAB289E1DD11B6000FD2457 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289D1DD11B6000FD2457 /* Actions.sks */; };
@@ -99,6 +107,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B542496A1DD21A6600A5DC83 /* ActionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionController.swift; sourceTree = "<group>"; };
+		B54249791DD2588E00A5DC83 /* TamaScreenScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TamaScreenScene.swift; sourceTree = "<group>"; };
+		B542497E1DD2643500A5DC83 /* PhoneButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneButton.swift; sourceTree = "<group>"; };
 		CE7CED211DD1EC0000182D26 /* ActionsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsScene.swift; sourceTree = "<group>"; };
 		CE7CED231DD1EF9C00182D26 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		CEAB28961DD11B6000FD2457 /* NanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +209,8 @@
 				CEAB289B1DD11B6000FD2457 /* GameScene.sks */,
 				CEAB289D1DD11B6000FD2457 /* Actions.sks */,
 				CEAB289F1DD11B6000FD2457 /* GameScene.swift */,
+				B54249791DD2588E00A5DC83 /* TamaScreenScene.swift */,
+				B542497E1DD2643500A5DC83 /* PhoneButton.swift */,
 				CEAB28A11DD11B6000FD2457 /* GameViewController.swift */,
 				CEAB28A31DD11B6000FD2457 /* Main.storyboard */,
 				CEAB28A61DD11B6000FD2457 /* Assets.xcassets */,
@@ -240,6 +253,7 @@
 			children = (
 				CEF3640B1DD17C5A00312FA8 /* Coelho_1.atlas */,
 				CEAB28E21DD11B7B00FD2457 /* InterfaceController.swift */,
+				B542496A1DD21A6600A5DC83 /* ActionController.swift */,
 				CEAB28E41DD11B7B00FD2457 /* GameScene.sks */,
 				CEAB28E61DD11B7B00FD2457 /* GameScene.swift */,
 				CE7CED211DD1EC0000182D26 /* ActionsScene.swift */,
@@ -473,11 +487,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7CED241DD1EF9C00182D26 /* Button.swift in Sources */,
 				CEAB28A01DD11B6000FD2457 /* GameScene.swift in Sources */,
 				CEAB28A21DD11B6000FD2457 /* GameViewController.swift in Sources */,
+				B542497F1DD2643500A5DC83 /* PhoneButton.swift in Sources */,
 				CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */,
 				CEF364121DD17F5900312FA8 /* Util.swift in Sources */,
+				B542497A1DD2588E00A5DC83 /* TamaScreenScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +501,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB28B51DD11B6000FD2457 /* NanoChallengeTests.swift in Sources */,
+				B542497B1DD2588E00A5DC83 /* TamaScreenScene.swift in Sources */,
+				B54249611DD20B2100A5DC83 /* Button.swift in Sources */,
+				B54249801DD2643500A5DC83 /* PhoneButton.swift in Sources */,
 				CEF364131DD17F5900312FA8 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +513,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB28C01DD11B6000FD2457 /* NanoChallengeUITests.swift in Sources */,
+				B542497C1DD2588E00A5DC83 /* TamaScreenScene.swift in Sources */,
+				B54249621DD20B2300A5DC83 /* Button.swift in Sources */,
+				B54249811DD2643500A5DC83 /* PhoneButton.swift in Sources */,
 				CEF364141DD17F5900312FA8 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +527,8 @@
 				CEAB28E71DD11B7B00FD2457 /* GameScene.swift in Sources */,
 				CEF364151DD17F5900312FA8 /* Util.swift in Sources */,
 				CEAB28E31DD11B7B00FD2457 /* InterfaceController.swift in Sources */,
-				CE7CED251DD1EF9C00182D26 /* Button.swift in Sources */,
+				B542496E1DD21A6600A5DC83 /* ActionController.swift in Sources */,
+				B54249691DD20D9B00A5DC83 /* Button.swift in Sources */,
 				CEAB28ED1DD11B7B00FD2457 /* ComplicationController.swift in Sources */,
 				CEAB28EB1DD11B7B00FD2457 /* NotificationController.swift in Sources */,
 				CEAB28E91DD11B7B00FD2457 /* ExtensionDelegate.swift in Sources */,

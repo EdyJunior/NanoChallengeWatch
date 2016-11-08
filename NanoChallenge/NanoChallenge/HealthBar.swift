@@ -19,7 +19,7 @@ class HealthBar: SKNode {
         bar = SKShapeNode(rect: CGRect(origin: CGPoint(x: 0 , y: 0), size: CGSize.init(width: parentView.frame.width - 20, height: 20)), cornerRadius: 5.0)
         barWidth = parentView.frame.width - 20
         
-        bar?.fillColor = SKColor.white
+        bar?.fillColor = SKColor.green
         self.addChild(bar!)
     }
     
@@ -28,8 +28,14 @@ class HealthBar: SKNode {
     }
     
     public func setHealth(fraction: CGFloat){
-        let reduceBar = SKAction.group([SKAction.resize(byWidth: -(bar?.frame.width)! * 0.2, height: 0, duration: 0)])
-        bar?.run(SKAction.resize(byWidth: 200, height: 0, duration: 0))
+        
+        bar?.run(SKAction.scaleX(to: 0.01, duration: 3))
+        
+    }
+    
+    public func feed(){
+        
+        bar?.run(SKAction.scaleX(to: 1, duration: 3))
     }
     
     /*public func setHealth(value: CGFloat){

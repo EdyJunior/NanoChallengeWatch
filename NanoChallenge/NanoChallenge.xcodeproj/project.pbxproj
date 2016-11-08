@@ -17,6 +17,9 @@
 		B542497F1DD2643500A5DC83 /* PhoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542497E1DD2643500A5DC83 /* PhoneButton.swift */; };
 		B54249801DD2643500A5DC83 /* PhoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542497E1DD2643500A5DC83 /* PhoneButton.swift */; };
 		B54249811DD2643500A5DC83 /* PhoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542497E1DD2643500A5DC83 /* PhoneButton.swift */; };
+		B54249871DD27FD700A5DC83 /* TamaScreenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B54249861DD27FD700A5DC83 /* TamaScreenScene.sks */; };
+		B54249881DD27FD700A5DC83 /* TamaScreenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B54249861DD27FD700A5DC83 /* TamaScreenScene.sks */; };
+		B54249891DD27FD700A5DC83 /* TamaScreenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B54249861DD27FD700A5DC83 /* TamaScreenScene.sks */; };
 		CE7CED221DD1EC0000182D26 /* ActionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CED211DD1EC0000182D26 /* ActionsScene.swift */; };
 		CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28991DD11B6000FD2457 /* AppDelegate.swift */; };
 		CEAB289C1DD11B6000FD2457 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289B1DD11B6000FD2457 /* GameScene.sks */; };
@@ -110,6 +113,7 @@
 		B542496A1DD21A6600A5DC83 /* ActionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionController.swift; sourceTree = "<group>"; };
 		B54249791DD2588E00A5DC83 /* TamaScreenScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TamaScreenScene.swift; sourceTree = "<group>"; };
 		B542497E1DD2643500A5DC83 /* PhoneButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneButton.swift; sourceTree = "<group>"; };
+		B54249861DD27FD700A5DC83 /* TamaScreenScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TamaScreenScene.sks; sourceTree = "<group>"; };
 		CE7CED211DD1EC0000182D26 /* ActionsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsScene.swift; sourceTree = "<group>"; };
 		CE7CED231DD1EF9C00182D26 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		CEAB28961DD11B6000FD2457 /* NanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,9 +210,10 @@
 			isa = PBXGroup;
 			children = (
 				CEAB28991DD11B6000FD2457 /* AppDelegate.swift */,
-				CEAB289B1DD11B6000FD2457 /* GameScene.sks */,
 				CEAB289D1DD11B6000FD2457 /* Actions.sks */,
+				CEAB289B1DD11B6000FD2457 /* GameScene.sks */,
 				CEAB289F1DD11B6000FD2457 /* GameScene.swift */,
+				B54249861DD27FD700A5DC83 /* TamaScreenScene.sks */,
 				B54249791DD2588E00A5DC83 /* TamaScreenScene.swift */,
 				B542497E1DD2643500A5DC83 /* PhoneButton.swift */,
 				CEAB28A11DD11B6000FD2457 /* GameViewController.swift */,
@@ -440,6 +445,7 @@
 				CEAB28A71DD11B6000FD2457 /* Assets.xcassets in Resources */,
 				CEAB28AA1DD11B6000FD2457 /* LaunchScreen.storyboard in Resources */,
 				CEAB289E1DD11B6000FD2457 /* Actions.sks in Resources */,
+				B54249871DD27FD700A5DC83 /* TamaScreenScene.sks in Resources */,
 				CEF3640C1DD17C5A00312FA8 /* Coelho_1.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF3640D1DD17C5A00312FA8 /* Coelho_1.atlas in Resources */,
+				B54249881DD27FD700A5DC83 /* TamaScreenScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF3640E1DD17C5A00312FA8 /* Coelho_1.atlas in Resources */,
+				B54249891DD27FD700A5DC83 /* TamaScreenScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

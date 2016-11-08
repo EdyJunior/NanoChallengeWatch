@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971060771DD1F00B00C20C4F /* Tama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971060761DD1F00B00C20C4F /* Tama.swift */; };
+		971060791DD1F23B00C20C4F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971060781DD1F23B00C20C4F /* LoginScreen.swift */; };
 		CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28991DD11B6000FD2457 /* AppDelegate.swift */; };
 		CEAB289C1DD11B6000FD2457 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289B1DD11B6000FD2457 /* GameScene.sks */; };
 		CEAB289E1DD11B6000FD2457 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289D1DD11B6000FD2457 /* Actions.sks */; };
@@ -96,6 +98,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		971060761DD1F00B00C20C4F /* Tama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tama.swift; sourceTree = "<group>"; };
+		971060781DD1F23B00C20C4F /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		CEAB28961DD11B6000FD2457 /* NanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAB28991DD11B6000FD2457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAB289B1DD11B6000FD2457 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -162,6 +166,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		971060751DD1EFD300C20C4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				971060761DD1F00B00C20C4F /* Tama.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		CEAB288D1DD11B6000FD2457 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +201,7 @@
 		CEAB28981DD11B6000FD2457 /* NanoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				971060751DD1EFD300C20C4F /* Model */,
 				CEAB28991DD11B6000FD2457 /* AppDelegate.swift */,
 				CEAB289B1DD11B6000FD2457 /* GameScene.sks */,
 				CEAB289D1DD11B6000FD2457 /* Actions.sks */,
@@ -198,6 +211,7 @@
 				CEAB28A61DD11B6000FD2457 /* Assets.xcassets */,
 				CEAB28A81DD11B6000FD2457 /* LaunchScreen.storyboard */,
 				CEAB28AB1DD11B6000FD2457 /* Info.plist */,
+				971060781DD1F23B00C20C4F /* LoginScreen.swift */,
 			);
 			path = NanoChallenge;
 			sourceTree = "<group>";
@@ -469,7 +483,9 @@
 				CEAB28A01DD11B6000FD2457 /* GameScene.swift in Sources */,
 				CEAB28A21DD11B6000FD2457 /* GameViewController.swift in Sources */,
 				CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */,
+				971060771DD1F00B00C20C4F /* Tama.swift in Sources */,
 				CEF364121DD17F5900312FA8 /* Util.swift in Sources */,
+				971060791DD1F23B00C20C4F /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

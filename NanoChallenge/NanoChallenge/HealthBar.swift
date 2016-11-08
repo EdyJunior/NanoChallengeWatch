@@ -42,8 +42,21 @@ class HealthBar: SKNode {
         actualHealth -= 1
         print("actual health \(actualHealth)")
         let ratio = actualHealth / maxHealth
-        print("ratio \(ratio)")
-        let newSize = newBar.frame.width * CGFloat(ratio)
+        //let ratio = 0.9
+        //print("ratio \(ratio)")
+        //let newSize = newBar.frame.width * CGFloat(ratio)
+        let newSize = newBar.frame.width - 1
+        newBar.run(SKAction.resize(toWidth: newSize, duration: 0.5))
+    }
+    
+    public func increase(){
+        actualHealth += 1
+        print("actual health \(actualHealth)")
+        //let ratio = maxHealth / actualHealth
+        //let ratio = 1.1
+        //print("ratio \(ratio)")
+        //let newSize = newBar.frame.width * CGFloat(ratio)
+        let newSize = newBar.frame.width + 1
         newBar.run(SKAction.resize(toWidth: newSize, duration: 0.5))
     }
     

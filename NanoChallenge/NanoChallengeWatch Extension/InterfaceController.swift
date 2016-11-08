@@ -24,9 +24,7 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func handleSwipe(swipeGesture gest: WKSwipeGestureRecognizer) {
-        
-        //let actionScene = ActionsScene()
-        //scene.presentScene(actionScene, transition: .push(with: .left, duration: 0.5))
+        pushController(withName: "ButtonController", context: nil)
     }
     
     override func willActivate() {

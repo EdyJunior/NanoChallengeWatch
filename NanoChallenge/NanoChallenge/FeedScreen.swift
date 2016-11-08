@@ -12,12 +12,19 @@ import SpriteKit
 class FeedScreen: SKScene {
     
     var healthBar: HealthBar?
+    var buttonCake: SKSpriteNode?
     
     
     override func didMove(to view: SKView) {
         healthBar = HealthBar.init(parentView: view)
         healthBar?.position = CGPoint(x: view.frame.width - 10 , y: view.frame.height - 40)
         self.addChild(healthBar!)
+        
+        buttonCake = SKSpriteNode(imageNamed: "cake.png")
+        buttonCake?.name = "buttonCake"
+        buttonCake?.position = CGPoint(x: view.frame.width/2, y: 100)
+        buttonCake?.size = CGSize(width: view.frame.width/4, height: 50)
+        self.addChild(buttonCake!)
     }
     
     override func sceneDidLoad() {
@@ -51,6 +58,9 @@ class FeedScreen: SKScene {
             
             //healthBar?.setHealth(fraction: 0)
             healthBar?.decrease()
+        }
+        if node.name == "buttonCake"{
+            healthBar?.increase()
         }
         
     }

@@ -49,7 +49,11 @@ class GameScene: SKScene {
             frames.append(atlas.textureNamed(textureName))
         }
         
-        bicho.run(SKAction.repeatForever(SKAction.animate(with: frames, timePerFrame: 0.4)))
+        bicho.run(SKAction.repeatForever(SKAction.animate(with: frames, timePerFrame: 0.3)))
         scene!.addChild(bicho)
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        // Colocando atualização de barra e demais coisas aqui!
     }
 }

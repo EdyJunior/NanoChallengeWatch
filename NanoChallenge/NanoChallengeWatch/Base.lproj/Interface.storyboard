@@ -16,7 +16,11 @@
                     <items>
                         <spriteKitScene alignment="left" id="eh2-bW-rMT">
                             <gestureRecognizers>
-                                <swipeGestureRecognizer direction="2" id="jSf-VE-4hV"/>
+                                <swipeGestureRecognizer direction="2" id="jSf-VE-4hV" userLabel=" Right Swipe Gesture">
+                                    <connections>
+                                        <action selector="handleSwipeWithSwipeGesture:" destination="AgC-eL-Hgc" id="R90-Au-hwj"/>
+                                    </connections>
+                                </swipeGestureRecognizer>
                             </gestureRecognizers>
                         </spriteKitScene>
                     </items>

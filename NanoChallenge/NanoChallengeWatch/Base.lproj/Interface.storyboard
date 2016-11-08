@@ -36,21 +36,25 @@
             <objects>
                 <controller identifier="ButtonController" id="XKV-py-anG" customClass="ActionController" customModule="NanoChallengeWatch_Extension">
                     <items>
-                        <group alignment="center" id="5zK-hM-avR">
+                        <group alignment="center" verticalAlignment="center" layout="vertical" id="jrQ-0f-rou">
                             <items>
-                                <button width="40" height="40" alignment="left" backgroundImage="icon-4" id="QLb-Fq-nNZ">
-                                    <connections>
-                                        <action selector="eatAction" destination="XKV-py-anG" id="sEF-yl-eJj"/>
-                                    </connections>
-                                </button>
-                                <button width="40" height="40" alignment="left" backgroundImage="icon-3" id="Byz-ck-Xpf"/>
-                                <button width="40" height="40" alignment="left" backgroundImage="icon-2" id="Fqg-qb-jUU"/>
-                            </items>
-                        </group>
-                        <group alignment="center" id="s39-bU-YkB">
-                            <items>
-                                <button width="40" height="40" alignment="left" backgroundImage="icon-1" id="k2Y-aw-mSY"/>
-                                <button width="40" height="40" alignment="left" backgroundImage="icon-0" id="c4A-qR-UIP"/>
+                                <group alignment="center" id="5zK-hM-avR">
+                                    <items>
+                                        <button width="40" height="40" alignment="left" backgroundImage="icon-4" id="QLb-Fq-nNZ">
+                                            <connections>
+                                                <action selector="eatAction" destination="XKV-py-anG" id="sEF-yl-eJj"/>
+                                            </connections>
+                                        </button>
+                                        <button width="40" height="40" alignment="left" backgroundImage="icon-3" id="Byz-ck-Xpf"/>
+                                        <button width="40" height="40" alignment="left" backgroundImage="icon-2" id="Fqg-qb-jUU"/>
+                                    </items>
+                                </group>
+                                <group alignment="center" id="s39-bU-YkB">
+                                    <items>
+                                        <button width="40" height="40" alignment="left" backgroundImage="icon-1" id="k2Y-aw-mSY"/>
+                                        <button width="40" height="40" alignment="left" backgroundImage="icon-0" id="c4A-qR-UIP"/>
+                                    </items>
+                                </group>
                             </items>
                         </group>
                     </items>

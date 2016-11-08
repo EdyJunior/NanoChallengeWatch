@@ -24,6 +24,7 @@ class ActionsScene: SKScene {
         let eatPos = CGPoint(x: -sSize.width * 0.4, y: sSize.height * 0.4)
         let eatBtn = Button(defaultButtonImage: "icon-0", activeButtonImage: "icon-0")
         eatBtn.setSizeAndPosition(buttonsSize, position: eatPos, areaFactor: 1)
+        eatBtn.action = eatAction
         addChild(eatBtn)
         
         let bathPos = CGPoint(x: 0, y: sSize.height * 0.4)
@@ -45,5 +46,9 @@ class ActionsScene: SKScene {
         let sleepBtn = Button(defaultButtonImage: "icon-4", activeButtonImage: "icon-4")
         sleepBtn.setSizeAndPosition(buttonsSize, position: sleepPos, areaFactor: 1)
         addChild(sleepBtn)
+    }
+    
+    func eatAction(_ button: Button) {
+        print("Edvaldo é o universo!")
     }
 }

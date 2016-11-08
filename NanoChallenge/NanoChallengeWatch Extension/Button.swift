@@ -6,8 +6,8 @@
 //  Copyright © 2016 Edvaldo Junior. All rights reserved.
 //
 
-import UIKit
 import SpriteKit
+import WatchKit
 
 class Button: SKNode {
     
@@ -34,8 +34,15 @@ class Button: SKNode {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func handleTap(tapGesture: WKTapGestureRecognizer) {
+        let location = tapGesture.locationInObject()
+        if touchableArea.contains(location) {
+            action!(self)
+        }
+    }
+    
 //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        
+//
 //        if touchableArea.contains((touches.first?.location(in: self))!) {
 //            if action != nil && enabled {
 //                activeButton.isHidden = false

@@ -23,8 +23,6 @@ class ActionsScene: SKScene {
         
         let buttonsSize = CGSize(width: sSize.width * 0.25, height: sSize.width * 0.25)
         
-        //eatButton.setBackgroundImageNamed("icon-4")
-        
         let eatPos = CGPoint(x: sSize.width * 0.15, y: sSize.height * 0.7)
         let eatBtn = Button(defaultButtonImage: "icon-4", activeButtonImage: "icon-4")
         eatBtn.setSizeAndPosition(buttonsSize, position: eatPos, areaFactor: 1)

@@ -34,16 +34,16 @@ class Button: SKNode {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        if touchableArea.contains((touches.first?.location(in: self))!) {
-            if action != nil && enabled {
-                activeButton.isHidden = false
-                defaultButton.isHidden = true
-                action!(self)
-            }
-        }
-    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        
+//        if touchableArea.contains((touches.first?.location(in: self))!) {
+//            if action != nil && enabled {
+//                activeButton.isHidden = false
+//                defaultButton.isHidden = true
+//                action!(self)
+//            }
+//        }
+//    }
     
     func setSizeAndPosition(_ size: CGSize, position: CGPoint, areaFactor factor: CGFloat) {
         

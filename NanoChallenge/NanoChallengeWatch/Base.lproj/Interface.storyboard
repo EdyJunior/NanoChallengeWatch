@@ -14,7 +14,11 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NanoChallengeWatch" customModuleProvider="target">
                     <items>
-                        <spriteKitScene alignment="left" id="eh2-bW-rMT"/>
+                        <spriteKitScene alignment="left" id="eh2-bW-rMT">
+                            <gestureRecognizers>
+                                <swipeGestureRecognizer direction="2" id="jSf-VE-4hV"/>
+                            </gestureRecognizers>
+                        </spriteKitScene>
                     </items>
                     <connections>
                         <outlet property="scene" destination="eh2-bW-rMT" id="PiM-GJ-pOL"/>

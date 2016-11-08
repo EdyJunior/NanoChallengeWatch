@@ -13,6 +13,9 @@ class HealthBar: SKNode {
     
     var bar: SKShapeNode?
     var barWidth: CGFloat?
+    var newBar = SKSpriteNode(color: SKColor.green, size: CGSize.init())
+    let maxHealth = 100.0
+    var actualHealth = 100.0
     
     init(parentView: UIView) {
         super.init()
@@ -20,7 +23,11 @@ class HealthBar: SKNode {
         barWidth = parentView.frame.width - 20
         
         bar?.fillColor = SKColor.green
-        self.addChild(bar!)
+        //self.addChild(bar!)
+        
+        newBar.size = CGSize(width: parentView.frame.width - 20, height: 30)
+        newBar.anchorPoint = CGPoint(x: 1, y: 0.5)
+        self.addChild(newBar)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -28,9 +35,16 @@ class HealthBar: SKNode {
     }
     
     public func setHealth(fraction: CGFloat){
-        
         bar?.run(SKAction.scaleX(to: 0.01, duration: 3))
-        
+    }
+    
+    public func decrease(){
+        actualHealth -= 1
+        print("actual health \(actualHealth)")
+        let ratio = actualHealth / maxHealth
+        print("ratio \(ratio)")
+        let newSize = newBar.frame.width * CGFloat(ratio)
+        newBar.run(SKAction.resize(toWidth: newSize, duration: 0.5))
     }
     
     public func feed(){

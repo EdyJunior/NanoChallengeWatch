@@ -13,9 +13,10 @@ class FeedScreen: SKScene {
     
     var healthBar: HealthBar?
     
+    
     override func didMove(to view: SKView) {
         healthBar = HealthBar.init(parentView: view)
-        healthBar?.position = CGPoint(x: 10 , y: view.frame.height - 40)
+        healthBar?.position = CGPoint(x: view.frame.width - 10 , y: view.frame.height - 40)
         self.addChild(healthBar!)
     }
     
@@ -48,7 +49,8 @@ class FeedScreen: SKScene {
         let node = self.atPoint(location!)
         if node.name == "rabbit"{
             
-            healthBar?.setHealth(fraction: 0)
+            //healthBar?.setHealth(fraction: 0)
+            healthBar?.decrease()
         }
         
     }

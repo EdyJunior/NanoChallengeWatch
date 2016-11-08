@@ -11,6 +11,11 @@
 		971060791DD1F23B00C20C4F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971060781DD1F23B00C20C4F /* LoginScreen.swift */; };
 		9710607B1DD1FE6600C20C4F /* FeedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710607A1DD1FE6600C20C4F /* FeedScreen.swift */; };
 		9710607D1DD2012E00C20C4F /* HealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9710607C1DD2012E00C20C4F /* HealthBar.swift */; };
+		975D0A4C1DD26041003473DA /* slidebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 975D0A4B1DD26041003473DA /* slidebar.png */; };
+		975D0A4D1DD26041003473DA /* slidebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 975D0A4B1DD26041003473DA /* slidebar.png */; };
+		975D0A4E1DD26041003473DA /* slidebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 975D0A4B1DD26041003473DA /* slidebar.png */; };
+		975D0A4F1DD26041003473DA /* slidebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 975D0A4B1DD26041003473DA /* slidebar.png */; };
+		975D0A501DD26041003473DA /* slidebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 975D0A4B1DD26041003473DA /* slidebar.png */; };
 		CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28991DD11B6000FD2457 /* AppDelegate.swift */; };
 		CEAB289C1DD11B6000FD2457 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289B1DD11B6000FD2457 /* GameScene.sks */; };
 		CEAB289E1DD11B6000FD2457 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289D1DD11B6000FD2457 /* Actions.sks */; };
@@ -104,6 +109,7 @@
 		971060781DD1F23B00C20C4F /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		9710607A1DD1FE6600C20C4F /* FeedScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedScreen.swift; sourceTree = "<group>"; };
 		9710607C1DD2012E00C20C4F /* HealthBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthBar.swift; sourceTree = "<group>"; };
+		975D0A4B1DD26041003473DA /* slidebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slidebar.png; sourceTree = "<group>"; };
 		CEAB28961DD11B6000FD2457 /* NanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAB28991DD11B6000FD2457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAB289B1DD11B6000FD2457 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -174,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				971060761DD1F00B00C20C4F /* Tama.swift */,
-				9710607C1DD2012E00C20C4F /* HealthBar.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -206,6 +211,8 @@
 		CEAB28981DD11B6000FD2457 /* NanoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				975D0A4B1DD26041003473DA /* slidebar.png */,
+				9710607C1DD2012E00C20C4F /* HealthBar.swift */,
 				971060751DD1EFD300C20C4F /* Model */,
 				CEAB28991DD11B6000FD2457 /* AppDelegate.swift */,
 				CEAB289B1DD11B6000FD2457 /* GameScene.sks */,
@@ -434,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975D0A4C1DD26041003473DA /* slidebar.png in Resources */,
 				CEAB28A51DD11B6000FD2457 /* Main.storyboard in Resources */,
 				CEAB289C1DD11B6000FD2457 /* GameScene.sks in Resources */,
 				CEAB28A71DD11B6000FD2457 /* Assets.xcassets in Resources */,
@@ -448,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF3640D1DD17C5A00312FA8 /* Coelho_1.atlas in Resources */,
+				975D0A4D1DD26041003473DA /* slidebar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF3640E1DD17C5A00312FA8 /* Coelho_1.atlas in Resources */,
+				975D0A4E1DD26041003473DA /* slidebar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +474,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB28D51DD11B7B00FD2457 /* Assets.xcassets in Resources */,
+				975D0A4F1DD26041003473DA /* slidebar.png in Resources */,
 				CEAB28D31DD11B7B00FD2457 /* Interface.storyboard in Resources */,
 				CEF3640F1DD17C5A00312FA8 /* Coelho_1.atlas in Resources */,
 			);
@@ -474,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEAB28EF1DD11B7B00FD2457 /* Assets.xcassets in Resources */,
+				975D0A501DD26041003473DA /* slidebar.png in Resources */,
 				CEAB28E51DD11B7B00FD2457 /* GameScene.sks in Resources */,
 				CEF364101DD17C5A00312FA8 /* Coelho_1.atlas in Resources */,
 			);

@@ -11,10 +11,9 @@ import WatchKit
 
 class ActionsScene: SKScene {
     
-    @IBOutlet weak var eatButton: WKInterfaceButton!
-    
     override func sceneDidLoad() {
         createButtons()
+        
     }
     
     func createButtons() {
@@ -53,4 +52,5 @@ class ActionsScene: SKScene {
     func eatAction(_ button: Button) {
         print("Edvaldo é o universo!")
     }
+    
 }

@@ -9,6 +9,7 @@
 import Foundation
 import WatchConnectivity
 import UIKit
+import SpriteKit
 
 
 class WatchSessionManager: NSObject, WCSessionDelegate {
@@ -40,20 +41,6 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
     
     func sessionDidDeactivate(_ session: WCSession) {
         //
-    }
-    
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        
-        //let v = viewController as! ViewController
-        
-//        if (message["a"] != nil){
-//            v.lblChange.text = message["a"]! as? String
-//            v.view.backgroundColor = UIColor.red
-//        } else {
-//            v.lblChange.text = message["b"] as? String
-//            v.view.backgroundColor = UIColor.green
-//        }
-        
     }
     
 }

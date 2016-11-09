@@ -21,15 +21,15 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>CLKComplicationPrincipalClass</key>
-	<string>$(PRODUCT_MODULE_NAME).ComplicationController</string>
+	<string>$(PRODUCT_MODULE_NAME).ComplicationHunger</string>
 	<key>CLKComplicationSupportedFamilies</key>
 	<array>
+		<string>CLKComplicationFamilyCircularSmall</string>
 		<string>CLKComplicationFamilyModularSmall</string>
-		<string>CLKComplicationFamilyModularLarge</string>
 		<string>CLKComplicationFamilyUtilitarianSmall</string>
+		<string>CLKComplicationFamilyModularLarge</string>
 		<string>CLKComplicationFamilyUtilitarianSmallFlat</string>
 		<string>CLKComplicationFamilyUtilitarianLarge</string>
-		<string>CLKComplicationFamilyCircularSmall</string>
 		<string>CLKComplicationFamilyExtraLarge</string>
 	</array>
 	<key>NSExtension</key>

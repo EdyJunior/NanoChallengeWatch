@@ -44,15 +44,15 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         
-        let v = viewController as! ViewController
+        //let v = viewController as! ViewController
         
-        if (message["a"] != nil){
-            v.lblChange.text = message["a"]! as? String
-            v.view.backgroundColor = UIColor.red
-        } else {
-            v.lblChange.text = message["b"] as? String
-            v.view.backgroundColor = UIColor.green
-        }
+//        if (message["a"] != nil){
+//            v.lblChange.text = message["a"]! as? String
+//            v.view.backgroundColor = UIColor.red
+//        } else {
+//            v.lblChange.text = message["b"] as? String
+//            v.view.backgroundColor = UIColor.green
+//        }
         
     }
     

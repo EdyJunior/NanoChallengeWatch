@@ -22,7 +22,7 @@ class TamaScreenScene: SKScene {
         createExperienceLabel()
         createStaminaLabel()
         createButtons()
-        
+        createHungerGauge()
         
         self.isUserInteractionEnabled = false
     }
@@ -31,7 +31,7 @@ class TamaScreenScene: SKScene {
         
         let bicho = SKSpriteNode(imageNamed: "Coelho_1-0")
         bicho.position = CGPoint(x: 0.5, y: 0.5)
-        bicho.size = CGSize(width: self.size.width * 0.5, height: self.size.height * 0.4)
+        bicho.size = CGSize(width: self.size.width * 0.55, height: self.size.height * 0.4)
         let atlas = SKTextureAtlas(named: "Coelho_1")
         var frames = [SKTexture]()
         
@@ -112,6 +112,14 @@ class TamaScreenScene: SKScene {
         let statusBtn = PhoneButton(defaultButtonImage: "icon-2", activeButtonImage: "icon-2")
         statusBtn.setSizeAndPosition(buttonsSize, position: statusPos, areaFactor: 1)
         addChild(statusBtn)
+    }
+    
+    func createHungerGauge() {
+        
+        let gauge = SKSpriteNode(imageNamed: "redTexture")
+        gauge.size = CGSize(width: mySize.width * 1.6, height: mySize.height * 0.05)
+        gauge.position = CGPoint(x: 0, y: mySize.height * 0.6)
+        addChild(gauge)
     }
     
     func eatAction (_ button: PhoneButton) {

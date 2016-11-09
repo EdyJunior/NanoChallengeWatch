@@ -25,24 +25,34 @@ class GameViewController: UIViewController {
 //        skView.showsNodeCount = true
 //        skView.presentScene(scene)
         
-        if let scene = GKScene(fileNamed: "TamaScreenScene") {
-            
-            // Get the SKScene from the loaded GKScene
-            if let sceneNode = scene.rootNode as! TamaScreenScene? {
+        if #available(iOS 10.0, *) {
+            if let scene = GKScene(fileNamed: "TamaScreenScene") {
                 
-                // Set the scale mode to scale to fit the window
-                sceneNode.scaleMode = .aspectFill
-                
-                // Present the scene
-                if let view = self.view as! SKView? {
-                    view.presentScene(sceneNode)
+                // Get the SKScene from the loaded GKScene
+                if let sceneNode = scene.rootNode as! TamaScreenScene? {
                     
-                    view.ignoresSiblingOrder = true
+                    // Set the scale mode to scale to fit the window
+                    sceneNode.scaleMode = .aspectFill
                     
-                    view.showsFPS = true
-                    view.showsNodeCount = true
+                    // Present the scene
+                    if let view = self.view as! SKView? {
+                        view.presentScene(sceneNode)
+                        
+                        view.ignoresSiblingOrder = true
+                        
+                        view.showsFPS = true
+                        view.showsNodeCount = true
+                    }
                 }
             }
+        } else {
+            let scene = TamaScreenScene(size: UIScreen.main.bounds.size)
+            scene.scaleMode = .aspectFill
+            let view = self.view as! SKView
+            view.presentScene(scene)
+            view.ignoresSiblingOrder = true
+            view.showsFPS = true
+            view.showsNodeCount = true
         }
     }
 

@@ -391,29 +391,29 @@
 				TargetAttributes = {
 					CEAB28951DD11B6000FD2457 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CWK5G6U242;
+						DevelopmentTeam = Q9563KMS4F;
 						ProvisioningStyle = Automatic;
 					};
 					CEAB28AF1DD11B6000FD2457 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CWK5G6U242;
+						DevelopmentTeam = Q9563KMS4F;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CEAB28951DD11B6000FD2457;
 					};
 					CEAB28BA1DD11B6000FD2457 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CWK5G6U242;
+						DevelopmentTeam = Q9563KMS4F;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CEAB28951DD11B6000FD2457;
 					};
 					CEAB28CE1DD11B7B00FD2457 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CWK5G6U242;
+						DevelopmentTeam = Q9563KMS4F;
 						ProvisioningStyle = Automatic;
 					};
 					CEAB28DA1DD11B7B00FD2457 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CWK5G6U242;
+						DevelopmentTeam = Q9563KMS4F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -700,9 +700,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				INFOPLIST_FILE = NanoChallenge/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -714,9 +714,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				INFOPLIST_FILE = NanoChallenge/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -729,7 +729,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				INFOPLIST_FILE = NanoChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallengeTests";
@@ -744,7 +744,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				INFOPLIST_FILE = NanoChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallengeTests";
@@ -758,7 +758,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				INFOPLIST_FILE = NanoChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallengeUITests";
@@ -772,7 +772,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				INFOPLIST_FILE = NanoChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallengeUITests";
@@ -786,7 +786,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				INFOPLIST_FILE = "NanoChallengeWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallenge.watchkitapp.watchkitextension";
@@ -803,7 +803,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				INFOPLIST_FILE = "NanoChallengeWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallenge.watchkitapp.watchkitextension";
@@ -821,7 +821,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				IBSC_MODULE = NanoChallengeWatch_Extension;
 				INFOPLIST_FILE = NanoChallengeWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallenge.watchkitapp";
@@ -839,7 +839,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CWK5G6U242;
+				DEVELOPMENT_TEAM = Q9563KMS4F;
 				IBSC_MODULE = NanoChallengeWatch_Extension;
 				INFOPLIST_FILE = NanoChallengeWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "Edvaldo-Junior.NanoChallenge.watchkitapp";

@@ -8,14 +8,29 @@
 
 import SpriteKit
 import WatchKit
+import WatchConnectivity
 
-class GameScene: SKScene {
+class GameScene: SKScene, WCSessionDelegate {
+    
+    var stamina: Int = 100 {
+        didSet {
+            (childNode(withName: "StaminaLabel") as! SKLabelNode).text = "STA: \(stamina)"
+        }
+    }
+    
+    let session = WCSession.default()
     
     override func sceneDidLoad() {
         
         createLabels()
         createTama()
+        
+        if (WCSession.isSupported()) {
+            session.delegate = self
+            session.activate()
+        }
     }
+    
     
     func createLabels() {
         
@@ -33,7 +48,8 @@ class GameScene: SKScene {
         scene!.addChild(xpLabel)
         
         let stmPos = CGPoint(x: +scene!.size.width * 0.35, y: scene!.size.height * 0.35)
-        let stmLabel = SKLabelNode(text: "st: 12")
+        let stmLabel = SKLabelNode()
+        stmLabel.name = "StaminaLabel"
         stmLabel.setLabel(size: fontSize, font: fontName, color: .white, position: stmPos)
         scene!.addChild(stmLabel)
     }
@@ -55,5 +71,18 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Colocando atualização de barra e demais coisas aqui!
+    }
+    
+    ///Essa funcao para receber a message
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        if message["a"] != nil{
+            stamina = message["a"] as! Int
+        }
+    }
+    
+    
+    //WCSession Protocolo
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
     }
 }

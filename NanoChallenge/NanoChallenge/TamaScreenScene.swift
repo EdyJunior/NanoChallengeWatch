@@ -7,22 +7,34 @@
 //
 
 import SpriteKit
+import WatchConnectivity
 
-class TamaScreenScene: SKScene {
+class TamaScreenScene: SKScene, WCSessionDelegate {
     
     var lastUpdateTime : TimeInterval = 0
     
     var mySize = UIScreen.main.bounds.size
     
+    var stamina: Int = 100 {
+        didSet {
+            (childNode(withName: "StaminaLabel") as! SKLabelNode).text = "STA: \(stamina)"
+        }
+    }
+    
+    let sessionManager = WatchSessionManager.sharedManager
+    
     override func sceneDidLoad() {
         
         self.lastUpdateTime = 0
+        
         createTama()
         createLevelLabel()
         createExperienceLabel()
         createStaminaLabel()
         createButtons()
         createHungerGauge()
+        
+        sessionManager.startSession()
         
         self.isUserInteractionEnabled = false
     }
@@ -58,7 +70,8 @@ class TamaScreenScene: SKScene {
     }
     
     func createStaminaLabel() {
-        let staminaLabel = SKLabelNode(text: "STA: 04")
+        let staminaLabel = SKLabelNode()
+        staminaLabel.name = "StaminaLabel"
         staminaLabel.position = CGPoint(x: mySize.width * 0.6, y: mySize.height * 0.75)
         staminaLabel.fontSize = mySize.height * 0.06
         addChild(staminaLabel)
@@ -115,7 +128,6 @@ class TamaScreenScene: SKScene {
     }
     
     func createHungerGauge() {
-        
         let gauge = SKSpriteNode(imageNamed: "redTexture")
         gauge.size = CGSize(width: mySize.width * 1.6, height: mySize.height * 0.05)
         gauge.position = CGPoint(x: 0, y: mySize.height * 0.6)
@@ -124,19 +136,49 @@ class TamaScreenScene: SKScene {
     
     func eatAction (_ button: PhoneButton) {
         print("Edvaldo é o universo!")
+        stamina = 100
+        sessionManager.session.sendMessage(["a" : stamina], replyHandler: nil, errorHandler: nil)
+    }
+    
+    ///Essa funcao para receber a message
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        
+        if (message["a"] != nil){
+            stamina = message["a"] as! Int
+        }
+    }
+    
+    private func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : AnyObject]) -> Void) {
+        
+        if (message["a"] != nil){
+            stamina = message["a"] as! Int
+        }
+    }
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        //
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        //
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        //
     }
     
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
-        
-        // Initialize _lastUpdateTime if it has not already been
-        if (self.lastUpdateTime == 0) {
-            self.lastUpdateTime = currentTime
+
+        if (lastUpdateTime == 0) {
+            lastUpdateTime = currentTime
         }
         
-        // Calculate time since last update
-        let dt = currentTime - self.lastUpdateTime
+        let dt = currentTime - lastUpdateTime
         
-        self.lastUpdateTime = currentTime
+        if dt > 1 {
+            lastUpdateTime = currentTime
+            stamina = stamina - 1
+            sessionManager.session.sendMessage(["a" : stamina], replyHandler: nil, errorHandler: nil)
+        }
     }
 }

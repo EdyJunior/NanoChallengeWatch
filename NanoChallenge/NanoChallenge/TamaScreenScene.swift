@@ -24,7 +24,6 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
     let session = WCSession.default()
     
     override func sceneDidLoad() {
-        
         self.lastUpdateTime = 0
         
         createTama()
@@ -40,7 +39,6 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
     }
     
     func createTama() {
-        
         let bicho = SKSpriteNode(imageNamed: "Coelho_1-0")
         bicho.position = CGPoint(x: 0.5, y: 0.5)
         bicho.size = CGSize(width: self.size.width * 0.55, height: self.size.height * 0.4)
@@ -63,7 +61,7 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
     }
     
     func createExperienceLabel() {
-        let experienceLabel = SKLabelNode(text: "XP: 520")
+        let experienceLabel = SKLabelNode(text: "XP: 22")
         experienceLabel.position = CGPoint(x: 0.0, y: mySize.height * 0.75)
         experienceLabel.fontSize = mySize.height * 0.06
         addChild(experienceLabel)
@@ -78,7 +76,6 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
     }
     
     func createButtons() {
-        
         var sSize = CGSize(width: CGFloat(1.0), height: CGFloat(1.0))
         sSize = mySize
         
@@ -147,7 +144,6 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
     
     ///Essa funcao para receber a message
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        
         if (message["a"] != nil){
             stamina = message["a"] as! Int
         }
@@ -166,7 +162,6 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
     }
     
     override func update(_ currentTime: TimeInterval) {
-
         if (lastUpdateTime == 0) {
             lastUpdateTime = currentTime
         }

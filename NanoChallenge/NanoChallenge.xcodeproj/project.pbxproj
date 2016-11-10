@@ -20,9 +20,6 @@
 		B54249871DD27FD700A5DC83 /* TamaScreenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B54249861DD27FD700A5DC83 /* TamaScreenScene.sks */; };
 		B54249881DD27FD700A5DC83 /* TamaScreenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B54249861DD27FD700A5DC83 /* TamaScreenScene.sks */; };
 		B54249891DD27FD700A5DC83 /* TamaScreenScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B54249861DD27FD700A5DC83 /* TamaScreenScene.sks */; };
-		B542498B1DD35C5A00A5DC83 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542498A1DD35C5A00A5DC83 /* WatchSessionManager.swift */; };
-		B542498C1DD35C5A00A5DC83 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542498A1DD35C5A00A5DC83 /* WatchSessionManager.swift */; };
-		B542498D1DD35C5A00A5DC83 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542498A1DD35C5A00A5DC83 /* WatchSessionManager.swift */; };
 		CE7CED221DD1EC0000182D26 /* ActionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7CED211DD1EC0000182D26 /* ActionsScene.swift */; };
 		CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28991DD11B6000FD2457 /* AppDelegate.swift */; };
 		CEAB289C1DD11B6000FD2457 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CEAB289B1DD11B6000FD2457 /* GameScene.sks */; };
@@ -117,7 +114,6 @@
 		B54249791DD2588E00A5DC83 /* TamaScreenScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TamaScreenScene.swift; sourceTree = "<group>"; };
 		B542497E1DD2643500A5DC83 /* PhoneButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneButton.swift; sourceTree = "<group>"; };
 		B54249861DD27FD700A5DC83 /* TamaScreenScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TamaScreenScene.sks; sourceTree = "<group>"; };
-		B542498A1DD35C5A00A5DC83 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		CE7CED211DD1EC0000182D26 /* ActionsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionsScene.swift; sourceTree = "<group>"; };
 		CE7CED231DD1EF9C00182D26 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		CEAB28961DD11B6000FD2457 /* NanoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,7 +209,6 @@
 		CEAB28981DD11B6000FD2457 /* NanoChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				B542498A1DD35C5A00A5DC83 /* WatchSessionManager.swift */,
 				CEAB28991DD11B6000FD2457 /* AppDelegate.swift */,
 				CEAB289D1DD11B6000FD2457 /* Actions.sks */,
 				CEAB289B1DD11B6000FD2457 /* GameScene.sks */,
@@ -506,7 +501,6 @@
 				CEAB289A1DD11B6000FD2457 /* AppDelegate.swift in Sources */,
 				CEF364121DD17F5900312FA8 /* Util.swift in Sources */,
 				B542497A1DD2588E00A5DC83 /* TamaScreenScene.swift in Sources */,
-				B542498B1DD35C5A00A5DC83 /* WatchSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +508,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B542498C1DD35C5A00A5DC83 /* WatchSessionManager.swift in Sources */,
 				CEAB28B51DD11B6000FD2457 /* NanoChallengeTests.swift in Sources */,
 				B542497B1DD2588E00A5DC83 /* TamaScreenScene.swift in Sources */,
 				B54249611DD20B2100A5DC83 /* Button.swift in Sources */,
@@ -527,7 +520,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B542498D1DD35C5A00A5DC83 /* WatchSessionManager.swift in Sources */,
 				CEAB28C01DD11B6000FD2457 /* NanoChallengeUITests.swift in Sources */,
 				B542497C1DD2588E00A5DC83 /* TamaScreenScene.swift in Sources */,
 				B54249621DD20B2300A5DC83 /* Button.swift in Sources */,

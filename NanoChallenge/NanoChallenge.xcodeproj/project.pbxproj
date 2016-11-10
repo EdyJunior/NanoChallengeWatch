@@ -42,9 +42,9 @@
 		CEAB28E71DD11B7B00FD2457 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28E61DD11B7B00FD2457 /* GameScene.swift */; };
 		CEAB28E91DD11B7B00FD2457 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28E81DD11B7B00FD2457 /* ExtensionDelegate.swift */; };
 		CEAB28EB1DD11B7B00FD2457 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28EA1DD11B7B00FD2457 /* NotificationController.swift */; };
-		CEAB28ED1DD11B7B00FD2457 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAB28EC1DD11B7B00FD2457 /* ComplicationController.swift */; };
 		CEAB28EF1DD11B7B00FD2457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAB28EE1DD11B7B00FD2457 /* Assets.xcassets */; };
 		CEAB28F31DD11B7B00FD2457 /* NanoChallengeWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CEAB28CF1DD11B7B00FD2457 /* NanoChallengeWatch.app */; };
+		CEDCA2791DD36274001C13AE /* ComplicationHunger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDCA2781DD36274001C13AE /* ComplicationHunger.swift */; };
 		CEF3640C1DD17C5A00312FA8 /* Coelho_1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CEF3640B1DD17C5A00312FA8 /* Coelho_1.atlas */; };
 		CEF3640D1DD17C5A00312FA8 /* Coelho_1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CEF3640B1DD17C5A00312FA8 /* Coelho_1.atlas */; };
 		CEF3640E1DD17C5A00312FA8 /* Coelho_1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = CEF3640B1DD17C5A00312FA8 /* Coelho_1.atlas */; };
@@ -147,9 +147,9 @@
 		CEAB28E61DD11B7B00FD2457 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CEAB28E81DD11B7B00FD2457 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		CEAB28EA1DD11B7B00FD2457 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		CEAB28EC1DD11B7B00FD2457 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		CEAB28EE1DD11B7B00FD2457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAB28F01DD11B7B00FD2457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDCA2781DD36274001C13AE /* ComplicationHunger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationHunger.swift; sourceTree = "<group>"; };
 		CEF3640B1DD17C5A00312FA8 /* Coelho_1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Coelho_1.atlas; sourceTree = "<group>"; };
 		CEF364111DD17F5900312FA8 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -263,18 +263,18 @@
 			children = (
 				CEF3640B1DD17C5A00312FA8 /* Coelho_1.atlas */,
 				CEAB28E21DD11B7B00FD2457 /* InterfaceController.swift */,
+				CEF364111DD17F5900312FA8 /* Util.swift */,
+				CE7CED231DD1EF9C00182D26 /* Button.swift */,
 				B542496A1DD21A6600A5DC83 /* ActionController.swift */,
 				CEAB28E41DD11B7B00FD2457 /* GameScene.sks */,
 				CEAB28E61DD11B7B00FD2457 /* GameScene.swift */,
 				CE7CED211DD1EC0000182D26 /* ActionsScene.swift */,
 				CEAB28E81DD11B7B00FD2457 /* ExtensionDelegate.swift */,
 				CEAB28EA1DD11B7B00FD2457 /* NotificationController.swift */,
-				CEAB28EC1DD11B7B00FD2457 /* ComplicationController.swift */,
 				CEAB28EE1DD11B7B00FD2457 /* Assets.xcassets */,
 				CEAB28F01DD11B7B00FD2457 /* Info.plist */,
 				CEAB28E01DD11B7B00FD2457 /* Supporting Files */,
-				CEF364111DD17F5900312FA8 /* Util.swift */,
-				CE7CED231DD1EF9C00182D26 /* Button.swift */,
+				CEDCA2781DD36274001C13AE /* ComplicationHunger.swift */,
 			);
 			path = "NanoChallengeWatch Extension";
 			sourceTree = "<group>";
@@ -540,12 +540,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDCA2791DD36274001C13AE /* ComplicationHunger.swift in Sources */,
 				CEAB28E71DD11B7B00FD2457 /* GameScene.swift in Sources */,
 				CEF364151DD17F5900312FA8 /* Util.swift in Sources */,
 				CEAB28E31DD11B7B00FD2457 /* InterfaceController.swift in Sources */,
 				B542496E1DD21A6600A5DC83 /* ActionController.swift in Sources */,
 				B54249691DD20D9B00A5DC83 /* Button.swift in Sources */,
-				CEAB28ED1DD11B7B00FD2457 /* ComplicationController.swift in Sources */,
 				CEAB28EB1DD11B7B00FD2457 /* NotificationController.swift in Sources */,
 				CEAB28E91DD11B7B00FD2457 /* ExtensionDelegate.swift in Sources */,
 				CE7CED221DD1EC0000182D26 /* ActionsScene.swift in Sources */,

@@ -43,13 +43,4 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
         //
     }
     
-//    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-//        
-//        let scene = TamaScreenScene()
-//        
-//        if (message["a"] != nil){
-//            scene.stamina = message["a"] as! Int
-//        }
-//    }
-    
 }

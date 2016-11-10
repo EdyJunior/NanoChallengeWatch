@@ -21,19 +21,13 @@ class GameScene: SKScene, WCSessionDelegate {
     let session = WCSession.default()
     
     override func sceneDidLoad() {
-        
         createLabels()
         createTama()
         
-        if (WCSession.isSupported()) {
-            session.delegate = self
-            session.activate()
-        }
+        startSession()
     }
     
-    
     func createLabels() {
-        
         let fontName = "Geeza Pro"
         let fontSize = scene!.size.height * 0.08
         
@@ -55,7 +49,6 @@ class GameScene: SKScene, WCSessionDelegate {
     }
     
     func createTama() {
-        
         let bicho = SKSpriteNode(imageNamed: "Coelho_1-0")
         bicho.size = CGSize(width: scene!.size.width * 0.5, height: scene!.size.height * 0.4)
         let atlas = SKTextureAtlas(named: "Coelho_1")
@@ -69,8 +62,11 @@ class GameScene: SKScene, WCSessionDelegate {
         scene!.addChild(bicho)
     }
     
-    override func update(_ currentTime: TimeInterval) {
-        // Colocando atualização de barra e demais coisas aqui!
+    func startSession() {
+        if (WCSession.isSupported()) {
+            session.delegate = self
+            session.activate()
+        }
     }
     
     ///Essa funcao para receber a message
@@ -80,9 +76,11 @@ class GameScene: SKScene, WCSessionDelegate {
         }
     }
     
-    
     //WCSession Protocolo
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        // Colocando atualização de barra e demais coisas aqui!
     }
 }

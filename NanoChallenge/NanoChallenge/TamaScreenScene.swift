@@ -21,7 +21,7 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
         }
     }
     
-    let sessionManager = WatchSessionManager.sharedManager
+    let session = WCSession.default()
     
     override func sceneDidLoad() {
         
@@ -34,7 +34,7 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
         createButtons()
         createHungerGauge()
         
-        sessionManager.startSession()
+        startSession()
         
         self.isUserInteractionEnabled = false
     }
@@ -137,18 +137,16 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
     func eatAction (_ button: PhoneButton) {
         print("Edvaldo é o universo!")
         stamina = 100
-        sessionManager.session.sendMessage(["a" : stamina], replyHandler: nil, errorHandler: nil)
+        session.sendMessage(["a" : stamina], replyHandler: nil, errorHandler: nil)
+    }
+    
+    func startSession() {
+        session.delegate = self
+        session.activate()
     }
     
     ///Essa funcao para receber a message
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        
-        if (message["a"] != nil){
-            stamina = message["a"] as! Int
-        }
-    }
-    
-    private func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : AnyObject]) -> Void) {
         
         if (message["a"] != nil){
             stamina = message["a"] as! Int
@@ -178,7 +176,7 @@ class TamaScreenScene: SKScene, WCSessionDelegate {
         if dt > 1 {
             lastUpdateTime = currentTime
             stamina = stamina - 1
-            sessionManager.session.sendMessage(["a" : stamina], replyHandler: nil, errorHandler: nil)
+            session.sendMessage(["a" : stamina], replyHandler: nil, errorHandler: nil)
         }
     }
 }
